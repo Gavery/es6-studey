@@ -29,6 +29,24 @@
 
 }
 
+
+  {
+	  //第二个参数的作用：reject
+    let ajax=function(){
+      console.log('执行2');
+      return new Promise(function (resolve,reject) {
+        setTimeout(function() {
+          1!=2?reject():resolve();
+        }, 1000);
+      })
+    };
+    ajax().then(function(){
+      console.log("promise");
+    },function(){
+      console.log('err');
+    })
+  }
+
 {
 	//连续调用（重要）
 	   let ajax = function() {
