@@ -1,4 +1,3 @@
-//import {A,test,Hello} from ./index18;
 
 let A=123;
 let test=function(){
